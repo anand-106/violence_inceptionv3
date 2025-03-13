@@ -9,11 +9,11 @@ import os
 def main():
     # Parse command line arguments
     parser = argparse.ArgumentParser(description="Real-time violence detection using webcam")
-    parser.add_argument("--model", type=str, default="models/violence_detection_model.h5",
+    parser.add_argument("--model", type=str, default="models/violence_detection_model_finetuned.h5",
                         help="Path to the trained model")
     parser.add_argument("--camera", type=int, default=0,
                         help="Camera device index")
-    parser.add_argument("--threshold", type=float, default=0.7,
+    parser.add_argument("--threshold", type=float, default=0.6,
                         help="Violence detection threshold")
     args = parser.parse_args()
     
